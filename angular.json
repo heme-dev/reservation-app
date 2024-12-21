@@ -32,6 +32,7 @@
               }
             ],
             "styles": [
+              "node_modules\\bootstrap\\dist\\css\\bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -67,6 +68,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 4201
+         },
           "configurations": {
             "production": {
               "buildTarget": "reservation-app:build:production"
@@ -96,6 +100,7 @@
               }
             ],
             "styles": [
+              "node_modules\\bootstrap\\dist\\css\\bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9b3313a9-c316-4d66-ba17-dac64c315010"
   }
 }
