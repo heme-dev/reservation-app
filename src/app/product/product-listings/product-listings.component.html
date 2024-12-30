@@ -1,0 +1,14 @@
+<div class="container text-center">
+    <br>
+    <div class="row row-cols-4">
+      <div *ngFor="let product of products; let productId = index" class="col">
+        <div class="card" style="width: 18rem;">
+            <img ngSrc="{{ product.coverImage }}" width="286.4" height="193.6" alt="placeholder" />
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <a class="card-text" [routerLink]="['/product', productId]">{{ product.description }}</a>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
